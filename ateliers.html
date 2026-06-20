@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ateliers & laboratoires IESP — Salle informatique, salle multimédia, atelier électrique et atelier mécanique à Brazzaville.">
+  <title>IESP — Ateliers & laboratoires</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        IES<span>P</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="ateliers.html" class="active">Ateliers</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta">Candidater</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="apropos.html"><i class="fa-solid fa-building-columns"></i> À propos</a>
+    <a href="formations.html"><i class="fa-solid fa-book-open"></i> Formations</a>
+    <a href="ateliers.html"><i class="fa-solid fa-screwdriver-wrench"></i> Ateliers</a>
+    <a href="actualites.html"><i class="fa-solid fa-newspaper"></i> Actualités</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="admissions.html" style="color:var(--accent)"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+  </nav>
+</header>
+
+<!-- ═══════ BANDEAU ═══════ -->
+<div class="page-top">
+  <div class="page-banner">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Ateliers & laboratoires
+    </div>
+    <h1>Ateliers & laboratoires</h1>
+    <p>Des espaces pratiques modernes équipés pour une formation professionnalisante et terrain.</p>
+  </div>
+</div>
+
+<!-- ═══════ INTRO ═══════ -->
+<section style="padding:52px 0 0;">
+  <div class="container" style="text-align:center; max-width:700px;">
+    <div class="section-label">Infrastructure pédagogique</div>
+    <div class="section-title">Apprendre en pratiquant</div>
+    <p style="font-size:1rem; color:var(--text-2); line-height:1.7;">L'IESP met à disposition de ses étudiants quatre espaces de travaux pratiques modernes. Ces ateliers et laboratoires permettent une mise en situation professionnelle dès la première année, garantissant une formation opérationnelle et des compétences directement utilisables sur le marché du travail.</p>
+  </div>
+</section>
+
+<!-- ═══════ ATELIERS ═══════ -->
+<section class="ateliers-page">
+  <div class="container">
+    <div class="ateliers-page-grid">
+
+      <!-- Salle informatique -->
+      <div class="ateliers-page-card fade-up">
+        <div class="atelier-page-icon"><i class="fa-solid fa-desktop"></i></div>
+        <h3>Salle informatique</h3>
+        <p>Espace équipé de postes de travail modernes dédiés à la pratique des logiciels de base et des logiciels spécialisés. Les étudiants y maîtrisent les outils bureautiques (Suite Office, traitement de texte, tableurs, présentations) ainsi que des logiciels professionnels de comptabilité (SAGE, Ciel Compta), de gestion d'entreprise (ERP), et de conception assistée par ordinateur.</p>
+        <div class="atelier-filieres-label">Équipements & logiciels</div>
+        <div class="atelier-filieres-tags" style="margin-bottom:16px;">
+          <span class="atag-lg">Suite Office</span>
+          <span class="atag-lg">SAGE Comptabilité</span>
+          <span class="atag-lg">Ciel Compta</span>
+          <span class="atag-lg">ERP</span>
+          <span class="atag-lg">CAO/DAO</span>
+        </div>
+        <div class="atelier-filieres-label">Filières utilisatrices</div>
+        <div class="atelier-filieres-tags">
+          <span class="atag-lg">GCF</span>
+          <span class="atag-lg">GCM</span>
+          <span class="atag-lg">AM</span>
+          <span class="atag-lg">BMA</span>
+          <span class="atag-lg">SIGL</span>
+          <span class="atag-lg">TL</span>
+          <span class="atag-lg">CIT</span>
+        </div>
+      </div>
+
+      <!-- Salle multimédia -->
+      <div class="ateliers-page-card fade-up">
+        <div class="atelier-page-icon"><i class="fa-solid fa-wifi"></i></div>
+        <h3>Salle multimédia</h3>
+        <p>Laboratoire spécialisé pour la pratique des réseaux informatiques, des systèmes d'exploitation, du génie logiciel et des télécommunications. Équipé de routeurs et switches Cisco, de serveurs Linux et Windows, et des principaux simulateurs réseau professionnels (Packet Tracer, GNS3). Idéal pour les travaux pratiques d'administration système et réseau.</p>
+        <div class="atelier-filieres-label">Équipements & outils</div>
+        <div class="atelier-filieres-tags" style="margin-bottom:16px;">
+          <span class="atag-lg">Routeurs Cisco</span>
+          <span class="atag-lg">Switches managés</span>
+          <span class="atag-lg">Packet Tracer</span>
+          <span class="atag-lg">GNS3</span>
+          <span class="atag-lg">Linux / Windows Server</span>
+        </div>
+        <div class="atelier-filieres-label">Filières utilisatrices</div>
+        <div class="atelier-filieres-tags">
+          <span class="atag-lg">RT</span>
+          <span class="atag-lg">SIGL</span>
+          <span class="atag-lg">Master SRT</span>
+          <span class="atag-lg">Master MI</span>
+        </div>
+      </div>
+
+      <!-- Atelier électrique -->
+      <div class="ateliers-page-card fade-up">
+        <div class="atelier-page-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Atelier électrique</h3>
+        <p>Atelier équipé de bancs de travaux pratiques en électrotechnique, câblage industriel, automatismes programmables et systèmes de protection électrique. Les étudiants y réalisent des montages électriques réels, programment des automates (API Siemens, Schneider), et s'initient aux systèmes d'énergie renouvelable (panneaux solaires, onduleurs).</p>
+        <div class="atelier-filieres-label">Équipements</div>
+        <div class="atelier-filieres-tags" style="margin-bottom:16px;">
+          <span class="atag-lg">Bancs électrotechniques</span>
+          <span class="atag-lg">API Siemens</span>
+          <span class="atag-lg">Automates Schneider</span>
+          <span class="atag-lg">Panneaux solaires</span>
+          <span class="atag-lg">Câblage industriel</span>
+        </div>
+        <div class="atelier-filieres-label">Filières utilisatrices</div>
+        <div class="atelier-filieres-tags">
+          <span class="atag-lg">EEI</span>
+          <span class="atag-lg">MI</span>
+          <span class="atag-lg">BTP</span>
+          <span class="atag-lg">Master MI</span>
+        </div>
+      </div>
+
+      <!-- Atelier mécanique -->
+      <div class="ateliers-page-card fade-up">
+        <div class="atelier-page-icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>Atelier mécanique</h3>
+        <p>Atelier dédié à la maintenance industrielle et à la mécanique générale. Équipé de machines-outils (tours, fraiseuses), d'équipements hydrauliques et pneumatiques, d'outillage de diagnostic et de mesure de précision. Les étudiants y réalisent des opérations de maintenance préventive et corrective sur des équipements industriels réels.</p>
+        <div class="atelier-filieres-label">Équipements</div>
+        <div class="atelier-filieres-tags" style="margin-bottom:16px;">
+          <span class="atag-lg">Tours / Fraiseuses</span>
+          <span class="atag-lg">Vérins hydrauliques</span>
+          <span class="atag-lg">Circuits pneumatiques</span>
+          <span class="atag-lg">Outillage de mesure</span>
+          <span class="atag-lg">Bancs de diagnostic</span>
+        </div>
+        <div class="atelier-filieres-label">Filières utilisatrices</div>
+        <div class="atelier-filieres-tags">
+          <span class="atag-lg">MI</span>
+          <span class="atag-lg">BTP</span>
+          <span class="atag-lg">EEI</span>
+          <span class="atag-lg">Master MI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ AVANTAGES ═══════ -->
+<section style="padding:60px 0; background:var(--surface);">
+  <div class="container">
+    <div class="section-label">Pourquoi nos ateliers ?</div>
+    <div class="section-title">Une formation 100 % pratique</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:36px;">
+      <div class="value-card fade-up">
+        <div class="value-icon"><i class="fa-solid fa-wrench"></i></div>
+        <h4>Équipements professionnels</h4>
+        <p>Des outils et machines identiques à ceux utilisés en entreprise pour une insertion immédiate.</p>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon"><i class="fa-solid fa-user-tie"></i></div>
+        <h4>Encadrement expert</h4>
+        <p>Des techniciens et ingénieurs expérimentés encadrent toutes les séances de travaux pratiques.</p>
+      </div>
+      <div class="value-card fade-up">
+        <div class="value-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <h4>Volume horaire élevé</h4>
+        <p>Plus de 40 % du temps de formation consacré aux travaux pratiques en atelier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="section-title">Venez visiter nos ateliers</div>
+    <p>Lors de notre journée portes ouvertes, découvrez nos équipements et assistez à des démonstrations en direct.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="admissions.html" class="btn btn-primary" style="font-size:1rem;padding:14px 32px"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+      <a href="contact.html" class="btn btn-outline" style="font-size:1rem;padding:14px 32px"><i class="fa-solid fa-envelope"></i> Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>IES<span>P</span></a>
+        <p>Institut d'Enseignement Supérieur Privé — Former les leaders de demain à Brazzaville, République du Congo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="formations.html">Sciences éco. & gestion</a></li>
+          <li><a href="formations.html">Sciences & technologies</a></li>
+          <li><a href="formations.html">Cycles Master</a></li>
+          <li><a href="ateliers.html">Ateliers & labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institut</h5>
+        <ul>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Brazzaville, Congo</a></li>
+          <li><a href="tel:+242060000000">+242 06 XXX XX XX</a></li>
+          <li><a href="mailto:contact@iesp.cg">contact@iesp.cg</a></li>
+          <li><a href="mailto:admissions@iesp.cg">admissions@iesp.cg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Institut d'Enseignement Supérieur Privé — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="scrollToTop()" title="Haut de page"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

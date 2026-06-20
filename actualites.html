@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actualités & événements de l'IESP — Résultats, journées portes ouvertes, partenariats et agenda de l'Institut.">
+  <title>IESP — Actualités & événements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        IES<span>P</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="actualites.html" class="active">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta">Candidater</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="apropos.html"><i class="fa-solid fa-building-columns"></i> À propos</a>
+    <a href="formations.html"><i class="fa-solid fa-book-open"></i> Formations</a>
+    <a href="ateliers.html"><i class="fa-solid fa-screwdriver-wrench"></i> Ateliers</a>
+    <a href="actualites.html"><i class="fa-solid fa-newspaper"></i> Actualités</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="admissions.html" style="color:var(--accent)"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+  </nav>
+</header>
+
+<!-- ═══════ BANDEAU ═══════ -->
+<div class="page-top">
+  <div class="page-banner">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Actualités
+    </div>
+    <h1>Actualités & événements</h1>
+    <p>Toute la vie de l'Institut — résultats, événements, partenariats et annonces officielles.</p>
+  </div>
+</div>
+
+<!-- ═══════ ARTICLES ═══════ -->
+<section class="actualites-section">
+  <div class="container">
+
+    <!-- Filtres -->
+    <div class="actu-filters">
+      <button class="filter-btn active" data-cat="all">Tout</button>
+      <button class="filter-btn" data-cat="resultats">Résultats</button>
+      <button class="filter-btn" data-cat="evenements">Événements</button>
+      <button class="filter-btn" data-cat="institutionnel">Institutionnel</button>
+      <button class="filter-btn" data-cat="partenariats">Partenariats</button>
+    </div>
+
+    <!-- Articles -->
+    <div class="actu-big-grid">
+      <div class="actu-full-card fade-up" data-cat="resultats">
+        <div class="actu-img res"><i class="fa-solid fa-trophy"></i></div>
+        <div class="actu-body">
+          <div class="cat">Résultats</div>
+          <h4>Publication des résultats du 2e semestre 2024–25</h4>
+          <p>Les résultats de toutes les filières — Licence 1, 2, 3 et Master 1, 2 — sont disponibles au secrétariat. Le tableau d'honneur des majors de promotion sera affiché à l'entrée du campus dès le 16 juin.</p>
+          <div class="actu-meta"><i class="fa-regular fa-calendar"></i> 14 juin 2025 &nbsp;·&nbsp; 3 min de lecture</div>
+        </div>
+      </div>
+      <div class="actu-full-card fade-up" data-cat="evenements">
+        <div class="actu-img evt"><i class="fa-solid fa-calendar-star"></i></div>
+        <div class="actu-body">
+          <div class="cat">Événement</div>
+          <h4>Journée portes ouvertes — Samedi 28 juin 2025</h4>
+          <p>Venez découvrir les ateliers, rencontrer les enseignants, assister à des démonstrations pratiques (réseaux, électricité, informatique) et obtenir toutes les informations sur nos filières Licence et Master pour 2025–2026.</p>
+          <div class="actu-meta"><i class="fa-regular fa-calendar"></i> 10 juin 2025 &nbsp;·&nbsp; 2 min de lecture</div>
+        </div>
+      </div>
+      <div class="actu-full-card fade-up" data-cat="institutionnel">
+        <div class="actu-img inst"><i class="fa-solid fa-certificate"></i></div>
+        <div class="actu-body">
+          <div class="cat">Institutionnel</div>
+          <h4>Renouvellement de l'accréditation ministérielle 2025–2030</h4>
+          <p>L'IESP a officiellement obtenu le renouvellement de son accréditation par le Ministère de l'Enseignement Supérieur de la République du Congo pour la période 2025–2030. Un gage de qualité et de confiance pour nos étudiants et partenaires.</p>
+          <div class="actu-meta"><i class="fa-regular fa-calendar"></i> 2 juin 2025 &nbsp;·&nbsp; 4 min de lecture</div>
+        </div>
+      </div>
+      <div class="actu-full-card fade-up" data-cat="partenariats">
+        <div class="actu-img part"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="actu-body">
+          <div class="cat">Partenariat</div>
+          <h4>Convention de stage signée avec le Groupe BEF</h4>
+          <p>Un nouveau partenariat stratégique avec le Groupe BEF permettra d'accueillir 30 étudiants en stage par an dans les filières BMA, GCF, GCM et CIT, avec des perspectives d'embauche à la clé.</p>
+          <div class="actu-meta"><i class="fa-regular fa-calendar"></i> 28 mai 2025 &nbsp;·&nbsp; 2 min de lecture</div>
+        </div>
+      </div>
+      <div class="actu-full-card fade-up" data-cat="evenements">
+        <div class="actu-img evt"><i class="fa-solid fa-microphone"></i></div>
+        <div class="actu-body">
+          <div class="cat">Événement</div>
+          <h4>Conférence : Emploi et insertion professionnelle dans les filières technologiques</h4>
+          <p>L'IESP organise une conférence avec la participation d'entreprises partenaires du secteur industriel et des télécommunications. Ouverte à tous les étudiants et candidats.</p>
+          <div class="actu-meta"><i class="fa-regular fa-calendar"></i> 15 mai 2025 &nbsp;·&nbsp; 2 min de lecture</div>
+        </div>
+      </div>
+      <div class="actu-full-card fade-up" data-cat="institutionnel">
+        <div class="actu-img inst"><i class="fa-solid fa-flask"></i></div>
+        <div class="actu-body">
+          <div class="cat">Institutionnel</div>
+          <h4>Inauguration du nouvel atelier électrique rénové</h4>
+          <p>L'atelier électrique de l'IESP a été entièrement rénové et équipé de nouveaux automates programmables Siemens et de bancs de travaux pratiques modernisés pour les filières EEI et MI.</p>
+          <div class="actu-meta"><i class="fa-regular fa-calendar"></i> 5 mai 2025 &nbsp;·&nbsp; 3 min de lecture</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ AGENDA ═══════ -->
+<section class="agenda-section">
+  <div class="container">
+    <div class="agenda-title"><i class="fa-solid fa-calendar-days" style="color:var(--blue)"></i> Agenda des prochains événements</div>
+    <div class="event-list">
+      <div class="event-item fade-up">
+        <div class="event-date"><div class="day">28</div><div class="month">juin</div></div>
+        <div class="event-info">
+          <h4>Journée portes ouvertes 2025</h4>
+          <p>9h–17h — Campus IESP, Brazzaville. Entrée libre. Démonstrations pratiques, rencontre avec les enseignants, visite des ateliers.</p>
+        </div>
+      </div>
+      <div class="event-item fade-up">
+        <div class="event-date"><div class="day">31</div><div class="month">juil.</div></div>
+        <div class="event-info">
+          <h4>Clôture des dossiers d'admission 2025–2026</h4>
+          <p>Date limite de dépôt des candidatures — Secrétariat (8h–17h) et formulaire en ligne.</p>
+        </div>
+      </div>
+      <div class="event-item fade-up">
+        <div class="event-date"><div class="day">02</div><div class="month">sept.</div></div>
+        <div class="event-info">
+          <h4>Rentrée académique 2025–2026</h4>
+          <p>8h30 — Amphithéâtre principal. Cérémonie d'ouverture officielle pour tous les cycles Licence et Master.</p>
+        </div>
+      </div>
+      <div class="event-item fade-up">
+        <div class="event-date"><div class="day">15</div><div class="month">oct.</div></div>
+        <div class="event-info">
+          <h4>Conférence : Débouchés dans les filières technologiques</h4>
+          <p>14h–17h — Salle de conférence IESP. Intervenants : DRH et ingénieurs des entreprises partenaires. Ouverte à tous.</p>
+        </div>
+      </div>
+      <div class="event-item fade-up">
+        <div class="event-date"><div class="day">20</div><div class="month">nov.</div></div>
+        <div class="event-info">
+          <h4>Forum entreprises & stages IESP 2025</h4>
+          <p>9h–16h — Campus IESP. Rencontre entre étudiants et recruteurs des entreprises partenaires. CV à apporter.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>IES<span>P</span></a>
+        <p>Institut d'Enseignement Supérieur Privé — Former les leaders de demain à Brazzaville, République du Congo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="formations.html">Sciences éco. & gestion</a></li>
+          <li><a href="formations.html">Sciences & technologies</a></li>
+          <li><a href="formations.html">Cycles Master</a></li>
+          <li><a href="ateliers.html">Ateliers & labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institut</h5>
+        <ul>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Brazzaville, Congo</a></li>
+          <li><a href="tel:+242060000000">+242 06 XXX XX XX</a></li>
+          <li><a href="mailto:contact@iesp.cg">contact@iesp.cg</a></li>
+          <li><a href="mailto:admissions@iesp.cg">admissions@iesp.cg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Institut d'Enseignement Supérieur Privé — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="scrollToTop()" title="Haut de page"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+<script>
+  /* Filtres actualités — logique locale */
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const cat = this.dataset.cat;
+      document.querySelectorAll('.actu-full-card').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formations IESP — Cycle Licence (Bac+3) et Cycle Master (Bac+5) en Sciences économiques & gestion et Sciences & technologies à Brazzaville.">
+  <title>IESP — Formations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        IES<span>P</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html" class="active">Formations</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta">Candidater</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="apropos.html"><i class="fa-solid fa-building-columns"></i> À propos</a>
+    <a href="formations.html"><i class="fa-solid fa-book-open"></i> Formations</a>
+    <a href="ateliers.html"><i class="fa-solid fa-screwdriver-wrench"></i> Ateliers</a>
+    <a href="actualites.html"><i class="fa-solid fa-newspaper"></i> Actualités</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="admissions.html" style="color:var(--accent)"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+  </nav>
+</header>
+
+<!-- ═══════ BANDEAU ═══════ -->
+<div class="page-top">
+  <div class="page-banner">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Formations
+    </div>
+    <h1>Nos formations</h1>
+    <p>Cycle Licence (Bac+3) et Cycle Master (Bac+5) — 12 filières Licence et 4 Masters dans 2 départements.</p>
+  </div>
+</div>
+
+<!-- ═══════ FORMATIONS ═══════ -->
+<section class="formations-section">
+  <div class="container">
+
+    <!-- Switch département -->
+    <div class="dept-switcher">
+      <button class="dept-btn active" id="btnSEG" onclick="switchDept('seg')">
+        <i class="fa-solid fa-chart-line"></i> Sciences éco. & gestion
+      </button>
+      <button class="dept-btn" id="btnST" onclick="switchDept('st')">
+        <i class="fa-solid fa-microchip"></i> Sciences & technologies
+      </button>
+    </div>
+
+    <!-- ── DÉPARTEMENT SEG ── -->
+    <div class="dept-panel active" id="panel-seg">
+      <div style="margin-bottom:20px;">
+        <div class="section-label">Département Sciences économiques & gestion</div>
+        <p style="font-size:.95rem; color:var(--text-2); max-width:600px;">7 filières Licence et 2 Masters pour former des cadres compétents en finance, management, commerce international et ressources humaines.</p>
+      </div>
+      <div class="cycle-switcher">
+        <button class="cycle-btn active" id="seg-l-btn" onclick="switchCycle('seg','l')">
+          <i class="fa-solid fa-graduation-cap"></i> Cycle Licence <span class="count">7</span>
+        </button>
+        <button class="cycle-btn" id="seg-m-btn" onclick="switchCycle('seg','m')">
+          <i class="fa-solid fa-star"></i> Cycle Master <span class="count">2</span>
+        </button>
+      </div>
+
+      <!-- SEG — Licence -->
+      <div id="seg-l" class="filieres-grid">
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">BMA</span></div>
+          <h4>Banque, Microfinance & Assurances</h4>
+          <p>Formation aux produits bancaires, à la microfinance, à la gestion des risques financiers, et aux assurances vie et non-vie. Les étudiants acquièrent des compétences opérationnelles dans les établissements de crédit et les compagnies d'assurance.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">AM</span></div>
+          <h4>Assistant Manager</h4>
+          <p>Management d'équipe, organisation administrative, communication professionnelle, gestion de projet et secrétariat de direction. Formation généraliste orientée vers les fonctions d'appui au management.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">TL</span></div>
+          <h4>Transport & Logistique</h4>
+          <p>Chaîne logistique, transport multimodal (route, fleuve, air), gestion des stocks et entrepôts, supply chain et optimisation des flux de marchandises dans un contexte africain et international.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">CIT</span></div>
+          <h4>Commerce International & Transit</h4>
+          <p>Import-export, réglementation douanière, procédures de transit, incoterms, financement du commerce international et techniques documentaires.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">GRH</span></div>
+          <h4>Gestion des Ressources Humaines</h4>
+          <p>Recrutement et sélection, droit du travail congolais, administration du personnel, formation professionnelle, gestion des carrières et relations sociales en entreprise.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">GCF</span></div>
+          <h4>Gestion Comptable & Financière</h4>
+          <p>Comptabilité générale et analytique, fiscalité, plan comptable OHADA, analyse financière, reporting et contrôle de gestion. Formation aux logiciels comptables professionnels.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code seg">GCM</span></div>
+          <h4>Gestion Commerciale & Marketing</h4>
+          <p>Marketing digital, stratégie commerciale, merchandising, techniques de vente, communication publicitaire et gestion de la relation client.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEG — Master -->
+      <div id="seg-m" class="filieres-grid" style="display:none">
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code master">MRH</span></div>
+          <h4>Management des Ressources Humaines</h4>
+          <p>Stratégie RH, développement organisationnel, leadership et management des équipes, gestion des talents, politique de rémunération et droit social avancé. Accessible après une Licence en GRH, AM ou équivalent.</p>
+          <div class="filiere-meta">
+            <span class="badge amber">Bac+5</span><span class="badge">2 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code master">CF</span></div>
+          <h4>Comptabilité & Finance</h4>
+          <p>Finance d'entreprise avancée, audit et commissariat aux comptes, contrôle de gestion, reporting IFRS et OHADA, ingénierie financière. Accessible après une Licence en GCF, BMA ou équivalent.</p>
+          <div class="filiere-meta">
+            <span class="badge amber">Bac+5</span><span class="badge">2 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DÉPARTEMENT ST ── -->
+    <div class="dept-panel" id="panel-st">
+      <div style="margin-bottom:20px;">
+        <div class="section-label">Département Sciences & technologies</div>
+        <p style="font-size:.95rem; color:var(--text-2); max-width:600px;">5 filières Licence et 2 Masters pour former des techniciens et ingénieurs en BTP, électrotechnique, maintenance industrielle, réseaux et informatique.</p>
+      </div>
+      <div class="cycle-switcher">
+        <button class="cycle-btn active" id="st-l-btn" onclick="switchCycle('st','l')">
+          <i class="fa-solid fa-graduation-cap"></i> Cycle Licence <span class="count">5</span>
+        </button>
+        <button class="cycle-btn" id="st-m-btn" onclick="switchCycle('st','m')">
+          <i class="fa-solid fa-star"></i> Cycle Master <span class="count">2</span>
+        </button>
+      </div>
+
+      <!-- ST — Licence -->
+      <div id="st-l" class="filieres-grid">
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code st">BTP</span></div>
+          <h4>Bâtiment & Travaux Publics</h4>
+          <p>Construction, topographie, béton armé, gestion de chantier, infrastructure routière, assainissement et matériaux de construction. Travaux pratiques en atelier mécanique et sur chantier.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code st">EEI</span></div>
+          <h4>Électrotechnique & Électricité Industrielle</h4>
+          <p>Électrotechnique, automatisme industriel, électricité de puissance, variateurs de vitesse, énergies renouvelables et domotique. Travaux pratiques en atelier électrique.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code st">MI</span></div>
+          <h4>Maintenance Industrielle</h4>
+          <p>Maintenance préventive et corrective, mécanique générale, hydraulique, pneumatique, lubrification et gestion des équipements industriels. Travaux pratiques en atelier mécanique et électrique.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code st">RT</span></div>
+          <h4>Réseaux & Télécommunications</h4>
+          <p>Réseaux IP, fibre optique, systèmes mobiles (3G/4G/5G), VoIP, administration réseau, infrastructure télécoms. Travaux pratiques en salle multimédia sur équipements Cisco et simulateurs.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code st">SIGL</span></div>
+          <h4>Systèmes Informatiques & Génie Logiciel</h4>
+          <p>Développement logiciel, bases de données relationnelles, architecture des systèmes, cybersécurité, génie logiciel et développement web/mobile. Travaux pratiques en salle informatique et salle multimédia.</p>
+          <div class="filiere-meta">
+            <span class="badge blue">Bac+3</span><span class="badge">3 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ST — Master -->
+      <div id="st-m" class="filieres-grid" style="display:none">
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code master">MI</span></div>
+          <h4>Maintenance Industrielle</h4>
+          <p>Gestion de la maintenance (GMAO), fiabilité et disponibilité des équipements, lean maintenance, management des équipes techniques et stratégies de maintenance. Accessible après une Licence MI, EEI ou équivalent.</p>
+          <div class="filiere-meta">
+            <span class="badge amber">Bac+5</span><span class="badge">2 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+        <div class="filiere-card fade-up">
+          <div class="filiere-header"><span class="filiere-code master">SRT</span></div>
+          <h4>Systèmes, Réseaux & Télécommunications</h4>
+          <p>Architecture réseaux avancée, sécurité des systèmes d'information, technologies 5G, SDN/NFV, infrastructures critiques et management des projets télécoms. Accessible après une Licence RT, SIGL ou équivalent.</p>
+          <div class="filiere-meta">
+            <span class="badge amber">Bac+5</span><span class="badge">2 ans</span><span class="badge green">Ouvert</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="section-title">Une filière vous intéresse ?</div>
+    <p>Déposez votre candidature ou contactez-nous pour plus d'informations.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="admissions.html" class="btn btn-primary" style="font-size:1rem;padding:14px 32px"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+      <a href="contact.html" class="btn btn-outline" style="font-size:1rem;padding:14px 32px"><i class="fa-solid fa-envelope"></i> Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>IES<span>P</span></a>
+        <p>Institut d'Enseignement Supérieur Privé — Former les leaders de demain à Brazzaville, République du Congo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="formations.html">Sciences éco. & gestion</a></li>
+          <li><a href="formations.html">Sciences & technologies</a></li>
+          <li><a href="formations.html">Cycles Master</a></li>
+          <li><a href="ateliers.html">Ateliers & labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institut</h5>
+        <ul>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Brazzaville, Congo</a></li>
+          <li><a href="tel:+242060000000">+242 06 XXX XX XX</a></li>
+          <li><a href="mailto:contact@iesp.cg">contact@iesp.cg</a></li>
+          <li><a href="mailto:admissions@iesp.cg">admissions@iesp.cg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Institut d'Enseignement Supérieur Privé — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="scrollToTop()" title="Haut de page"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

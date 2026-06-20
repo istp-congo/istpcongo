@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez l'IESP — Adresse, téléphone, e-mail et formulaire de contact de l'Institut d'Enseignement Supérieur Privé de Brazzaville.">
+  <title>IESP — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        IES<span>P</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="admissions.html" class="nav-cta">Candidater</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="apropos.html"><i class="fa-solid fa-building-columns"></i> À propos</a>
+    <a href="formations.html"><i class="fa-solid fa-book-open"></i> Formations</a>
+    <a href="ateliers.html"><i class="fa-solid fa-screwdriver-wrench"></i> Ateliers</a>
+    <a href="actualites.html"><i class="fa-solid fa-newspaper"></i> Actualités</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="admissions.html" style="color:var(--accent)"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+  </nav>
+</header>
+
+<!-- ═══════ BANDEAU ═══════ -->
+<div class="page-top">
+  <div class="page-banner">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Contact
+    </div>
+    <h1>Nous contacter</h1>
+    <p>Notre équipe vous répond dans les 24 heures ouvrées. N'hésitez pas à nous écrire ou à passer nous rendre visite.</p>
+  </div>
+</div>
+
+<!-- ═══════ CONTACT PRINCIPAL ═══════ -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Coordonnées -->
+      <div>
+        <div class="contact-info-card">
+          <h3>Coordonnées de l'Institut</h3>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Adresse</h4>
+              <p>Brazzaville, République du Congo<br><small style="opacity:.7">(Adresse précise à compléter)</small></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Téléphone</h4>
+              <p>+242 06 XXX XX XX<br>+242 05 XXX XX XX</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:contact@iesp.cg" style="color:rgba(255,255,255,.9)">contact@iesp.cg</a><br>
+                 <a href="mailto:admissions@iesp.cg" style="color:rgba(255,255,255,.9)">admissions@iesp.cg</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Horaires d'ouverture</h4>
+              <p>Lundi – Vendredi : 8h00 – 18h00<br>Samedi : 8h00 – 13h00<br><small style="opacity:.7">Fermé le dimanche et jours fériés</small></p>
+            </div>
+          </div>
+          <div class="socials">
+            <a class="social-btn" href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-btn" href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="social-btn" href="#" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="social-btn" href="#" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Carte Google Maps -->
+        <div class="map-embed">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>Intégrer ici la carte Google Maps<br><small>Remplacer par un &lt;iframe&gt; Google Maps</small></p>
+        </div>
+        <!-- EXEMPLE d'iframe Google Maps à activer :
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!..."
+          width="100%" height="200" style="border:0; border-radius:12px; margin-top:20px;"
+          allowfullscreen loading="lazy">
+        </iframe>
+        -->
+      </div>
+
+      <!-- Formulaire -->
+      <div>
+        <div class="contact-form-card">
+          <h3><i class="fa-solid fa-envelope" style="color:var(--blue)"></i> Envoyer un message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" placeholder="Votre prénom" required>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" placeholder="Votre nom" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" placeholder="email@exemple.com" required>
+            </div>
+            <div class="form-group">
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel" placeholder="+242 06 XXX XX XX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="objet">Objet *</label>
+            <select id="objet" required>
+              <option value="">-- Choisir un objet --</option>
+              <option value="info">Demande d'information générale</option>
+              <option value="admissions">Admissions et candidatures</option>
+              <option value="scolarite">Scolarité et frais</option>
+              <option value="stages">Stages et insertion professionnelle</option>
+              <option value="partenariat">Partenariat entreprise</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" placeholder="Décrivez votre demande en détail..." required style="height:120px;"></textarea>
+          </div>
+
+          <button class="btn btn-navy" style="width:100%; justify-content:center; font-size:1rem;"
+            onclick="submitForm(this)">
+            <i class="fa-solid fa-paper-plane"></i> Envoyer le message
+          </button>
+          <p class="form-note"><i class="fa-solid fa-shield-halved"></i> Vos données sont confidentielles et ne seront pas transmises à des tiers.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SERVICES CONTACT ═══════ -->
+<section style="padding:60px 0; background:var(--surface);">
+  <div class="container">
+    <div class="section-label">Nos services</div>
+    <div class="section-title">Qui contacter ?</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:32px;">
+      <div class="value-card fade-up" style="text-align:left; padding:22px;">
+        <div class="value-icon" style="text-align:left;"><i class="fa-solid fa-user-pen"></i></div>
+        <h4>Secrétariat Admissions</h4>
+        <p style="margin-bottom:10px;">Pour toute question relative aux inscriptions, dossiers et candidatures.</p>
+        <a href="mailto:admissions@iesp.cg" style="font-size:.85rem; color:var(--blue); font-weight:600;">admissions@iesp.cg</a>
+      </div>
+      <div class="value-card fade-up" style="text-align:left; padding:22px;">
+        <div class="value-icon" style="text-align:left;"><i class="fa-solid fa-book-open-reader"></i></div>
+        <h4>Direction Académique</h4>
+        <p style="margin-bottom:10px;">Pour les questions pédagogiques, résultats, emplois du temps et programmes.</p>
+        <a href="mailto:academique@iesp.cg" style="font-size:.85rem; color:var(--blue); font-weight:600;">academique@iesp.cg</a>
+      </div>
+      <div class="value-card fade-up" style="text-align:left; padding:22px;">
+        <div class="value-icon" style="text-align:left;"><i class="fa-solid fa-handshake"></i></div>
+        <h4>Relations Entreprises</h4>
+        <p style="margin-bottom:10px;">Pour les conventions de stage, partenariats et offres d'emploi.</p>
+        <a href="mailto:entreprises@iesp.cg" style="font-size:.85rem; color:var(--blue); font-weight:600;">entreprises@iesp.cg</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>IES<span>P</span></a>
+        <p>Institut d'Enseignement Supérieur Privé — Former les leaders de demain à Brazzaville, République du Congo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="formations.html">Sciences éco. & gestion</a></li>
+          <li><a href="formations.html">Sciences & technologies</a></li>
+          <li><a href="formations.html">Cycles Master</a></li>
+          <li><a href="ateliers.html">Ateliers & labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institut</h5>
+        <ul>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Brazzaville, Congo</a></li>
+          <li><a href="tel:+242060000000">+242 06 XXX XX XX</a></li>
+          <li><a href="mailto:contact@iesp.cg">contact@iesp.cg</a></li>
+          <li><a href="mailto:admissions@iesp.cg">admissions@iesp.cg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Institut d'Enseignement Supérieur Privé — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="scrollToTop()" title="Haut de page"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

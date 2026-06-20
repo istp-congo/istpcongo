@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Institut d'Enseignement Supérieur Privé — 2 départements, 12 filières Licence et 4 Masters à Brazzaville, Congo.">
+  <title>IESP — Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        ISTP<span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta">Candidater</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="apropos.html"><i class="fa-solid fa-building-columns"></i> À propos</a>
+    <a href="formations.html"><i class="fa-solid fa-book-open"></i> Formations</a>
+    <a href="ateliers.html"><i class="fa-solid fa-screwdriver-wrench"></i> Ateliers</a>
+    <a href="actualites.html"><i class="fa-solid fa-newspaper"></i> Actualités</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="admissions.html" style="color:var(--accent)"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+  </nav>
+</header>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow"><i class="fa-solid fa-star"></i> Inscriptions 2026–2027 bientot ouvertes</div>
+    <h1 class="hero-title">Former les <span class="highlight">leaders</span> de demain</h1>
+    <p class="hero-sub">Etablissement d'Enseignement Supérieur Privé à Brazzaville — 2 départements, 12 filières Licence et 4 Masters pour construire votre avenir professionnel.</p>
+    <div class="hero-btns">
+      <a href="formations.html" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Découvrir nos formations</a>
+      <a href="admissions.html" class="btn btn-outline"><i class="fa-solid fa-file-pen"></i> Candidater en ligne</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">12<span>+</span></div><div class="lbl">Filières Licence</div></div>
+      <div class="hero-stat"><div class="num">4</div><div class="lbl">Masters</div></div>
+      <div class="hero-stat"><div class="num">4</div><div class="lbl">Ateliers & labs</div></div>
+      <div class="hero-stat"><div class="num">85<span>%</span></div><div class="lbl">Insertion pro.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ DÉPARTEMENTS ═══════ -->
+<section class="depts-section">
+  <div class="container">
+    <div class="section-label">Nos départements</div>
+    <div class="section-title">Deux pôles d'excellence</div>
+    <p class="section-sub">Licence (Bac+3) et Master (Bac+5) — des formations professionnalisantes adaptées aux besoins du marché.</p>
+    <div class="depts-grid">
+      <div class="dept-card seg fade-up">
+        <div class="dept-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Sciences économiques & gestion</h3>
+        <p>7 filières Licence et 2 Masters pour former des cadres en finance, management, commerce et ressources humaines.</p>
+        <div class="dept-filieres">
+          <span class="badge blue">BMA</span><span class="badge blue">AM</span><span class="badge blue">TL</span>
+          <span class="badge blue">CIT</span><span class="badge blue">GRH</span><span class="badge blue">GCF</span>
+          <span class="badge blue">GCM</span><span class="badge green">Master MRH</span><span class="badge green">Master CF</span>
+        </div>
+        <a class="dept-link" href="formations.html">Voir toutes les filières <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card st fade-up">
+        <div class="dept-icon"><i class="fa-solid fa-microchip"></i></div>
+        <h3>Sciences & technologies</h3>
+        <p>5 filières Licence et 2 Masters en BTP, électrotechnique, maintenance, réseaux et informatique.</p>
+        <div class="dept-filieres">
+          <span class="badge amber">BTP</span><span class="badge amber">EEI</span><span class="badge amber">MI</span>
+          <span class="badge amber">RT</span><span class="badge amber">SIGL</span>
+          <span class="badge green">Master MI</span><span class="badge green">Master SRT</span>
+        </div>
+        <a class="dept-link" href="formations.html">Voir toutes les filières <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ATELIERS STRIP ═══════ -->
+<section class="ateliers-strip">
+  <div class="container">
+    <div class="section-label" style="color:var(--accent)">Infrastructure</div>
+    <div class="section-title" style="color:var(--white)">Ateliers & laboratoires</div>
+    <p class="section-sub" style="color:rgba(255,255,255,.6)">Des espaces équipés pour une formation 100 % pratique.</p>
+    <div class="ateliers-grid">
+      <div class="atelier-card fade-up">
+        <div class="atelier-icon"><i class="fa-solid fa-desktop"></i></div>
+        <h4>Salle informatique</h4>
+        <p>Logiciels de base et spécialisés — bureautique, comptabilité, gestion.</p>
+        <div class="atelier-tags"><span class="atag">GCF</span><span class="atag">GCM</span><span class="atag">AM</span><span class="atag">BMA</span><span class="atag">SIGL</span></div>
+      </div>
+      <div class="atelier-card fade-up">
+        <div class="atelier-icon"><i class="fa-solid fa-wifi"></i></div>
+        <h4>Salle multimédia</h4>
+        <p>Réseaux, systèmes, génie logiciel et télécommunications.</p>
+        <div class="atelier-tags"><span class="atag">RT</span><span class="atag">SIGL</span><span class="atag">SRT</span><span class="atag">MI</span></div>
+      </div>
+      <div class="atelier-card fade-up">
+        <div class="atelier-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h4>Atelier électrique</h4>
+        <p>Électrotechnique, électricité industrielle, automatisme et câblage.</p>
+        <div class="atelier-tags"><span class="atag">EEI</span><span class="atag">MI</span><span class="atag">BTP</span></div>
+      </div>
+      <div class="atelier-card fade-up">
+        <div class="atelier-icon"><i class="fa-solid fa-gears"></i></div>
+        <h4>Atelier mécanique</h4>
+        <p>Machines-outils, hydraulique, pneumatique et maintenance.</p>
+        <div class="atelier-tags"><span class="atag">MI</span><span class="atag">BTP</span><span class="atag">EEI</span></div>
+      </div>
+    </div>
+    <div style="margin-top:28px">
+      <a href="ateliers.html" class="btn btn-outline"><i class="fa-solid fa-flask"></i> En savoir plus sur nos ateliers</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ACTUALITÉS ═══════ -->
+<section class="news-section">
+  <div class="container">
+    <div class="news-header">
+      <div>
+        <div class="section-label">Actualités</div>
+        <div class="section-title">Dernières nouvelles</div>
+      </div>
+      <a href="actualites.html" class="btn btn-ghost">Toutes les actualités <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="news-grid">
+      <div class="news-card fade-up">
+        <div class="news-img res"><i class="fa-solid fa-trophy"></i></div>
+        <div class="news-body">
+          <div class="news-cat">Résultats</div>
+          <h4>Publication des résultats du 1<sup>er</sup> semestre 2025–26</h4>
+          <p>Les résultats sont consultables au secrétariat et affichés sur le tableau d'honneur.</p>
+          <div class="news-date"><i class="fa-regular fa-calendar"></i> 14 avril 2026</div>
+        </div>
+      </div>
+      <div class="news-card fade-up">
+        <div class="news-img evt"><i class="fa-solid fa-calendar-star"></i></div>
+        <div class="news-body">
+          <div class="news-cat">Événement</div>
+          <h4>Journée portes ouvertes — vendredi 28 Septembre 2026</h4>
+          <p>Venez visiter les ateliers, rencontrer les enseignants et découvrir nos filières.</p>
+          <div class="news-date"><i class="fa-regular fa-calendar"></i> 28 septembre 2026</div>
+        </div>
+      </div>
+      <div class="news-card fade-up">
+        <div class="news-img inst"><i class="fa-solid fa-certificate"></i></div>
+        <div class="news-body">
+          <div class="news-cat">Institutionnel</div>
+          <h4>Renouvellement de l'accréditation ministérielle 2025–2030</h4>
+          <p>L'ISTP a obtenu le renouvellement de son accréditation pour 5 ans supplémentaires.</p>
+          <div class="news-date"><i class="fa-regular fa-calendar"></i> 2 juin 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ TÉMOIGNAGES ═══════ -->
+<section class="testi-section">
+  <div class="container">
+    <div class="section-label">Témoignages</div>
+    <div class="section-title">Ils ont choisi l'ISTP</div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"L'ISTP m'a donné les outils concrets pour décrocher mon premier poste dès la sortie. La formation GCF est vraiment orientée pratique."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AK</div>
+          <div><div class="testi-name">Alicia K.</div><div class="testi-role">GCF — Promotion 2023</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Les ateliers sont bien équipés. En SIGL, on a eu accès à des environnements réels pour pratiquer. Le réseau alumni est très actif."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MD</div>
+          <div><div class="testi-name">Marc D.</div><div class="testi-role">SIGL — Promotion 2024</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Après ma Licence BTP, j'ai intégré le Master MI. La continuité des formations est un vrai avantage. Je recommande l'ISTP sans hésitation."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PN</div>
+          <div><div class="testi-name">Patrick N.</div><div class="testi-role">BTP puis Master MI — Promotion 2024</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="section-title">Prêt à rejoindre l'ISTP ?</div>
+    <p>Les inscriptions pour l'année académique 2026–2027 seront ouvertes  à partir du mois d'Août 2026. Ne manquez pas la date limite.</p>
+    <a href="admissions.html" class="btn btn-primary" style="font-size:1rem;padding:14px 32px"><i class="fa-solid fa-file-pen"></i> Déposer ma candidature</a>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>ISTP</a>
+        <p>Etablissement d'Enseignement Supérieur Privé — Former les leaders de demain à Brazzaville, République du Congo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="formations.html">Sciences éco. & gestion</a></li>
+          <li><a href="formations.html">Sciences & technologies</a></li>
+          <li><a href="formations.html">Cycles Master</a></li>
+          <li><a href="ateliers.html">Ateliers & labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institut</h5>
+        <ul>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Brazzaville, Congo</a></li>
+          <li><a href="tel:+242060000000">+242 06 XXX XX XX</a></li>
+          <li><a href="mailto:contact@iesp.cg">contact@iesp.cg</a></li>
+          <li><a href="mailto:admissions@iesp.cg">admissions@iesp.cg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Institut d'Enseignement Supérieur Privé — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="scrollToTop()" title="Haut de page"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>
