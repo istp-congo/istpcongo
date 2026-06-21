@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mentions légales du site de l'Institut des Sciences et Techniques Professionnelles — ISTP — Institut des Sciences et Techniques Professionnelles.">
+  <title>ISTP — Mentions légales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-section { padding: 60px 0 80px; }
+    .legal-content { max-width: 820px; margin: 0 auto; }
+    .legal-block {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .legal-block h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .legal-block h2 i { color: var(--blue); font-size: 1rem; }
+    .legal-block p {
+      font-size: .9rem; color: var(--text-2);
+      line-height: 1.75; margin-bottom: 10px;
+    }
+    .legal-block p:last-child { margin-bottom: 0; }
+    .legal-block a { color: var(--blue); }
+    .legal-block a:hover { text-decoration: underline; }
+    .legal-block ul { padding-left: 20px; margin-top: 6px; }
+    .legal-block ul li {
+      font-size: .9rem; color: var(--text-2);
+      line-height: 1.75; list-style: disc;
+    }
+    .legal-info-row {
+      display: flex; gap: 12px; align-items: baseline;
+      margin-bottom: 6px;
+    }
+    .legal-info-row .lbl {
+      font-size: .8rem; font-weight: 700;
+      color: var(--navy-mid); min-width: 160px;
+      text-transform: uppercase; letter-spacing: .04em;
+    }
+    .legal-info-row .val {
+      font-size: .9rem; color: var(--text-2);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo_istp.png" alt="Logo ISTP" class="logo-img">
+        <span class="logo-text"><div align="center">ISTP<br><small>Institut des Sciences et <br>Techniques Professionnelles </small></div></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="ateliers.html">Ateliers</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta">Candidater</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="apropos.html"><i class="fa-solid fa-building-columns"></i> À propos</a>
+    <a href="formations.html"><i class="fa-solid fa-book-open"></i> Formations</a>
+    <a href="ateliers.html"><i class="fa-solid fa-screwdriver-wrench"></i> Ateliers</a>
+    <a href="actualites.html"><i class="fa-solid fa-newspaper"></i> Actualités</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="admissions.html" style="color:var(--accent)"><i class="fa-solid fa-file-pen"></i> Candidater</a>
+  </nav>
+</header>
+
+<!-- ═══════ BANDEAU ═══════ -->
+<div class="page-top">
+  <div class="page-banner">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      Mentions légales
+    </div>
+    <h1>Mentions légales</h1>
+    <p>Informations légales relatives au site web de l'Institut des Sciences et Techniques Professionnelles.</p>
+  </div>
+</div>
+
+<!-- ═══════ CONTENU ═══════ -->
+<section class="legal-section">
+  <div class="container">
+    <div class="legal-content">
+
+      <!-- Éditeur -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-building"></i> 1. Éditeur du site</h2>
+        <div class="legal-info-row"><span class="lbl">Raison sociale</span><span class="val">Institut des Sciences et Techniques Professionnelles (ISTP)</span></div>
+        <div class="legal-info-row"><span class="lbl">Statut juridique</span><span class="val">Établissement privé d'enseignement supérieur</span></div>
+        <div class="legal-info-row"><span class="lbl">Siège social</span><span class="val">Brazzaville, République du Congo</span></div>
+        <div class="legal-info-row"><span class="lbl">Téléphone</span><span class="val">+242 06 XXX XX XX</span></div>
+        <div class="legal-info-row"><span class="lbl">E-mail</span><span class="val"><a href="mailto:contact@istp.cg">contact@istp.cg</a></span></div>
+        <div class="legal-info-row"><span class="lbl">Directeur de publication</span><span class="val">Pr. Jean-Baptiste M. — Directeur Général</span></div>
+        <div class="legal-info-row"><span class="lbl">Accréditation</span><span class="val">Ministère de l'Enseignement Supérieur de la République du Congo</span></div>
+      </div>
+
+      <!-- Hébergement -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-server"></i> 2. Hébergement</h2>
+        <div class="legal-info-row"><span class="lbl">Hébergeur</span><span class="val">À compléter — Nom de l'hébergeur</span></div>
+        <div class="legal-info-row"><span class="lbl">Adresse</span><span class="val">À compléter — Adresse de l'hébergeur</span></div>
+        <div class="legal-info-row"><span class="lbl">Site web</span><span class="val"><a href="#" target="_blank">www.hebergeur.com</a></span></div>
+      </div>
+
+      <!-- Propriété intellectuelle -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-copyright"></i> 3. Propriété intellectuelle</h2>
+        <p>L'ensemble de ce site web — structure, textes, graphismes, logos, icônes, images, sons et logiciels — est la propriété exclusive de l'Institut des Sciences et Techniques Professionnelles (ISTP) ou de ses partenaires, et est protégé par les lois en vigueur en République du Congo relatives à la propriété intellectuelle.</p>
+        <p>Toute reproduction, représentation, modification, publication ou transmission, totale ou partielle, du contenu de ce site, par quelque procédé que ce soit, sans l'autorisation préalable et écrite de l'ISTP, est strictement interdite et constituerait une contrefaçon.</p>
+        <p>Les marques et logos figurant sur le site sont des marques déposées par l'ISTP. Toute reproduction sans autorisation expresse est interdite.</p>
+      </div>
+
+      <!-- Données personnelles -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-shield-halved"></i> 4. Protection des données personnelles</h2>
+        <p>Dans le cadre de l'utilisation de ce site, l'ISTP est susceptible de collecter des données personnelles via les formulaires de contact et d'admission (nom, prénom, adresse e-mail, numéro de téléphone).</p>
+        <p>Ces données sont collectées uniquement dans le but de répondre à vos demandes d'information ou de traiter votre candidature. Elles ne sont en aucun cas cédées, vendues ou transmises à des tiers sans votre consentement.</p>
+        <p>Conformément aux principes de protection des données, vous disposez des droits suivants :</p>
+        <ul>
+          <li>Droit d'accès à vos données personnelles</li>
+          <li>Droit de rectification des données inexactes</li>
+          <li>Droit à l'effacement (droit à l'oubli)</li>
+          <li>Droit d'opposition au traitement de vos données</li>
+        </ul>
+        <p style="margin-top:12px">Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@istp.cg">contact@istp.cg</a></p>
+      </div>
+
+      <!-- Cookies -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-cookie-bite"></i> 5. Cookies</h2>
+        <p>Ce site utilise des cookies techniques nécessaires à son bon fonctionnement (session, préférences d'affichage) ainsi que des cookies d'analyse d'audience via Google Analytics 4, qui nous permettent d'améliorer l'expérience utilisateur.</p>
+        <p>Aucun cookie publicitaire n'est utilisé sur ce site. Vous pouvez à tout moment désactiver les cookies dans les paramètres de votre navigateur, ce qui pourrait toutefois affecter certaines fonctionnalités du site.</p>
+      </div>
+
+      <!-- Responsabilité -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-triangle-exclamation"></i> 6. Limitation de responsabilité</h2>
+        <p>L'ISTP s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, l'ISTP ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.</p>
+        <p>L'ISTP décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site, ainsi que pour tous dommages résultant d'une intrusion frauduleuse d'un tiers ayant entraîné une modification des informations mises à disposition.</p>
+        <p>Les liens hypertextes présents sur ce site vers d'autres sites internet ne sauraient engager la responsabilité de l'ISTP quant au contenu de ces sites.</p>
+      </div>
+
+      <!-- Droit applicable -->
+      <div class="legal-block">
+        <h2><i class="fa-solid fa-gavel"></i> 7. Droit applicable</h2>
+        <p>Le présent site et ses mentions légales sont soumis au droit de la République du Congo. Tout litige relatif à l'utilisation de ce site sera soumis à la juridiction compétente de Brazzaville.</p>
+        <p style="margin-top:10px; font-size:.82rem; color:var(--text-3);">Dernière mise à jour : juin 2025</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo logo-footer" href="index.html"><img src="images/logo_istp.png" alt="Logo ISTP" class="logo-img"><span class="logo-text"><H1>ISTP</H1></a>
+        <p>Institut des Sciences et Techniques Professionnelles — Former les leaders de demain à Brazzaville, République du Congo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="formations.html">Sciences éco. & gestion</a></li>
+          <li><a href="formations.html">Sciences & technologies</a></li>
+          <li><a href="formations.html">Cycles Master</a></li>
+          <li><a href="ateliers.html">Ateliers & labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institut</h5>
+        <ul>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Brazzaville, Congo</a></li>
+          <li><a href="tel:+242060000000">+242 06 XXX XX XX</a></li>
+          <li><a href="mailto:contact@istp.cg">contact@istp.cg</a></li>
+          <li><a href="admissions.html">admissions@istp.cg</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Institut des Sciences et Techniques Professionnelles — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="nous-rejoindre.html">Nous rejoindre</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="scrollToTop()" title="Haut de page"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

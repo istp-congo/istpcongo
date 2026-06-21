@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   IESP — main.js  (partagé par toutes les pages)
+   ISTP — main.js  (partagé par toutes les pages)
    ═══════════════════════════════════════════════════════════ */
 
 /* ── 1. Header : effet au scroll ─────────────────────────── */
